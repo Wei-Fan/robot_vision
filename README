@@ -1,0 +1,5 @@
+Package notification:
+graspFromCam.jpg 's PATH should be modified in: 
+graspImage.cpp, try.py
+happiness/ 's PATH should be modified in:
+try.py

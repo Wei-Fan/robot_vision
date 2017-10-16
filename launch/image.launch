@@ -1,0 +1,21 @@
+<launch>
+
+	<node
+		pkg="robot_vision"
+		type="graspImage"
+		name="graspImage"
+	/>
+
+	<node
+		pkg="robot_vision"
+		type="playImage"
+		name="playImage"
+	/>
+
+	<node
+		pkg="robot_vision"
+		type="try.py"
+		name="pytry"
+	/>
+
+</launch>
