@@ -92,6 +92,9 @@ find_package(catkin REQUIRED COMPONENTS
 #   cfg/DynReconf2.cfg
 # )
 
+FIND_PACKAGE(OpenCV REQUIRED)
+
+
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -143,8 +146,8 @@ add_dependencies(playImage robot_vision_generate_messages_cpp)
 # target_link_libraries(robot_vision_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(playImage ${catkin_LIBRARIES})
-target_link_libraries(graspImage ${catkin_LIBRARIES})
+target_link_libraries(playImage ${catkin_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(graspImage ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
 #############
 ## Install ##
