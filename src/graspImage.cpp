@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 {
 	ros::init(argc, argv, "graspImage");
 	ros::NodeHandle n;
-	ros::Publisher img_pub = n.advertise<sensor_msgs::Image>("CamImage", 1000);
+	ros::Publisher img_pub = n.advertise<sensor_msgs::Image>("CamImage",1000);//"/ardrone/front/image_raw", 1000);
 	ros::Rate rate(10);
 
 	/*read image data from Cam*/	
